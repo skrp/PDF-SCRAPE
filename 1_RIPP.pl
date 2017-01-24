@@ -5,7 +5,7 @@ use CAM::PDF;
 my ($file) = @ARGV;
 my $doc; my $str; my $batch; my $end; my $p;
 $doc = CAM::PDF->new($file) || die "$CAM::PDF::errstr\n";
-open(my $fh, '>', 'tmp.txt'); # must verify data struct post-extraction 
+open(my $fh, '>', 'tmp.txt'); # tmp to verify data post-extraction 
 my $pages = $doc->numPages(); $p = '1'; $end = $pages; $end++;
 while ($p != $end)
 { # remove unnessary data on rip
