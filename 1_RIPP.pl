@@ -1,6 +1,7 @@
 use warnings; use strict;
 use CAM::PDF;
-
+#########################
+# RIPP - scrape pdf files
 my $file = 'tst.pdf';
 my $doc; my $str; my $batch; my $end; my $p;
 $doc = CAM::PDF->new($file) || die "$CAM::PDF::errstr\n";
