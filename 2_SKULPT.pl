@@ -1,4 +1,6 @@
 use strict; use warnings;
+################################
+# SKULPT - build a custom report
 open(my $fh, "<", 'tmp.txt');
 my @line = readline $fh; chomp @line; close $fh;
 my @name; my @date_of_service; my @payment;
